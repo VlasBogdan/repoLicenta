@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>751752011883-93jcv6csfm5r9b4bt2bp0hqap79t5439.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.751752011883-93jcv6csfm5r9b4bt2bp0hqap79t5439</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkkSHVsrX7hq-Lm2GEMayFCpX8cq6TTZg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>751752011883</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>carwash.CarWash</string>
+	<key>PROJECT_ID</key>
+	<string>carwash-53eb5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carwash-53eb5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:751752011883:ios:e7a5fce79093b7771a512e</string>
+	<key>DATABASE_URL</key>
+	<string>https://carwash-53eb5.firebaseio.com</string>
+</dict>
+</plist>
