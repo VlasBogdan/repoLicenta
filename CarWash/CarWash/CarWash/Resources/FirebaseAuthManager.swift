@@ -20,17 +20,13 @@ class FirebaseAuthManager {
                 completionBlock(false)
             }
             
-            
             guard let userId = authResult?.user.uid else {return}
                 Firestore.firestore().collection(USERS_REF).document(userId).setData([
                 
                 DATE_CREATED : FieldValue.serverTimestamp()
-                
                 ], completion:  { (error) in
                 if let error = error{
                                    debugPrint("Error : \(error.localizedDescription)")
-                               } else {
-                                    return
                                }
                            })
         }
@@ -38,5 +34,14 @@ class FirebaseAuthManager {
         
         
     }
-
+    
+    func signIn(email: String, pass: String, completionBlock: @escaping (_ success: Bool) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: pass) { (authResult, error) in
+            if let error = error, let _ = AuthErrorCode(rawValue: error._code) {
+                completionBlock(false)
+            } else {
+                completionBlock(true)
+            }
+        }
+    }
 }

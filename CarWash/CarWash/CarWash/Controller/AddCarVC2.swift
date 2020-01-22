@@ -20,6 +20,15 @@ class AddCarVC2: UIViewController , UIPickerViewDelegate , UIPickerViewDataSourc
     @IBOutlet weak var blackImage: UIImageView!
     @IBOutlet weak var purpleImage: UIImageView!
     
+    
+    let pickerDataSource: [String: [String]] = [
+       "BMW" : ["Seria 5", "Seria 4", "Seria 3"],
+       "Opel" : ["Astra" , "Insgnia" , "Vectra" , "Corsa"],
+       "Mercedess" : ["A-Class" , "C-Class" , "E-Class" , "S-Class"],
+       "Volkswagens" : ["Golf" , "Passat" , "Jetta" , "Bora"],
+     ]
+    
+    
     //car choiches
     let brandListCar = ["BMW", "Mercedess","Opel","Volkswagens"]
     let bmwListCar = ["Seria 5", "Seria 4", "Seria 3" , "Seria 1"]
